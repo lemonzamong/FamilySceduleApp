@@ -1,0 +1,178 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0 !important;
+  padding: 0;
+  background-color: #a3c1e0;
+}
+
+
+header {
+  background: #003366;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative; /* 기본 위치 설정 */
+  z-index: 10; /* 다른 요소들 위에 표시되도록 설정 */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav ul li a.active {
+  background-color: #00509e; /* 활성화된 메뉴 항목 색상 */
+}
+
+section {
+  background: #fff;
+  margin: 0.5cm auto; /* 상하 여백은 0.5cm, 좌우 여백은 auto로 설정 */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 90%; /* 최대 너비를 90%로 설정하여 여백을 줄임 */
+}
+
+.review-container {
+  display: flex;
+  flex-wrap: wrap; /* 줄 바꿈 허용 */
+  justify-content: space-between; /* 양쪽 여백을 균등하게 */
+}
+
+.review-box {
+  flex: 0 48%; /* 각 박스가 48% 너비를 가짐 (2개씩 배치) */
+  margin: 1%; /* 여백 설정 */
+  padding: 15px; /* 내부 여백 추가 */
+  background-color: #f9f9f9; /* 배경색 설정 */
+  border: 1px solid #ddd; /* 테두리 추가 */
+  border-radius: 5px; /* 모서리 둥글게 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+  box-sizing: border-box; /* 패딩과 테두리를 포함하여 너비 계산 */
+}
+
+.comparison-box {
+  text-align: center; /* 차별점 박스의 텍스트 중앙 정렬 */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center; /* 사진 중앙 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+  height: 200px; /* 원하는 높이 설정 */
+}
+
+.image-container img {
+  max-height: 100%; /* 최대 높이 설정 */
+  object-fit: contain; /* 이미지 비율 유지 */
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #003366;
+  color: #fff;
+  display: block; /* 기본적으로 보이도록 설정 */
+}
+
+/* 메인화면에서 숨기기 */
+.hidden-footer {
+    display: none; /* 숨김 설정 */
+}
+
+.hidden {
+  display: none;
+}
+
+
+#main {
+  background-image:
+    /* linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), 검은색 그라데이션 */
+    url('main_img.png') !important ; /* 원하는 사진의 URL로 변경하세요 */
+    opacity: 0.0;
+  background-size: cover !important; /* 배경 이미지가 섹션을 가득 채우도록 설정 */
+  background-repeat: no-repeat !important; /* 배경 이미지 반복 방지 */
+  background-position: center !important; /* 배경 이미지의 위치를 중앙으로 설정 */
+  color: #fff !important; /* 텍스트 색상을 흰색으로 변경 (가독성을 위해) */
+  text-align: left !important;
+  padding: 50px;
+  height: 100vh; /* 섹션의 높이를 화면의 100%로 설정 */
+  margin: 0.000000001; /* 기본 여백 제거 */
+}
+
+#main h1 {
+  font-size: 40px; /* 제목 글자 크기 */
+  line-height: 3; /* 본문 줄 간격 (1.5배) */
+}
+
+#main h2 {
+  font-size: 40px; /* 부제목 글자 크기 */
+  line-height: 0.2;
+}
+
+#main p {
+  font-size: 60px; /* 본문 글자 크기 */
+  line-height: 2; /* 본문 줄 간격 (1.5배) */
+}
+
+/* 메인화면에서 헤더를 우측 상단에 고정하기 위한 클래스 추가 */
+.fixed-header {
+  position: fixed; /* 고정 위치 설정 */
+  right: 20px; /* 오른쪽에서 20px 떨어진 위치 */
+  top: 20px; /* 상단에서 20px 떨어진 위치 */
+  background-color: #00ff0000; /* 배경색을 반투명으로 설정 (가독성 향상) */
+  padding: 10px; /* 패딩 추가 */
+  border-radius: 5px; /* 모서리 둥글게 설정 */
+  align-items: center; /* 중앙 정렬 */
+}
+
+.fixed-header h1,
+.fixed-header h2,
+.fixed-header p {
+  display: none; /* 텍스트를 숨김 */
+}
+
+.features-container {
+  display: flex; /* Flexbox 사용 */
+  justify-content: space-around; /* 요소 간 간격을 균등하게 배치 */
+  flex-wrap: wrap; /* 필요시 줄 바꿈 허용 */
+  margin: 20px 0; /* 상하 여백 추가 */
+}
+
+.review-box2 {
+  flex: 1; /* 각 박스가 동일한 너비를 가짐 */
+  max-width: 30%; /* 최대 너비 설정 (3개가 일렬로 배치되도록) */
+  margin: 10px; /* 여백 추가 */
+  padding: 15px; /* 내부 여백 추가 */
+  background-color: #f9f9f9; /* 배경색 설정 */
+  border: 1px solid #ddd; /* 테두리 추가 */
+  border-radius: 5px; /* 모서리 둥글게 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 추가 */
+  box-sizing: border-box; /* 패딩과 테두리를 포함하여 너비 계산 */
+}
+
+body.main-screen {
+  background-color: #f0f0f0; /* 메인 화면에서 사용할 배경색 */
+  color: #333; /* 메인 화면 텍스트 색상 */
+  background-image:
+  /* linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), 검은색 그라데이션 */
+  url('main_img.png') !important ; /* 원하는 사진의 URL로 변경하세요 */
+  background-size: cover !important; /* 배경 이미지가 섹션을 가득 채우도록 설정 */
+  background-repeat: no-repeat !important; /* 배경 이미지 반복 방지 */
+  background-position: center !important; /* 배경 이미지의 위치를 중앙으로 설정 */
+}

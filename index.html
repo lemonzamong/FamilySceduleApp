@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>에이지 커넥트</title>
+  <link rel="stylesheet" href="styles.css"> <!-- CSS 파일 링크 -->
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet"> <!-- Google Fonts 링크 -->
+  <script src="script.js" defer></script> <!-- JavaScript 파일 링크 -->
+</head>
+
+<body>
+
+  <header>
+    <h1>에이지 커넥트</h1>
+    <h2>
+      <p>구세대와 신세대의 소통을 위한 non-smart-device</p>
+    </h2>
+    <nav>
+      <ul>
+        <li><a href="javascript:void(0);" onclick="showSection('main')" class="active">메인화면</a></li>
+        <li><a href="javascript:void(0);" onclick="showSection('intro')">제품 소개</a></li>
+        <li><a href="javascript:void(0);" onclick="showSection('features')">핵심 기능</a></li>
+        <li><a href="javascript:void(0);" onclick="showSection('comparison')">차별점</a></li>
+        <li><a href="javascript:void(0);" onclick="showSection('testimonials')">고객 리뷰</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="main" style="background: #fff; color: #000; text-align: center; padding: 50px;">
+      <!-- 메인 내용 -->
+    </section>
+
+    <section id="intro" class="hidden">
+      <h2 style="color: #333; text-align: center;">제품 소개</h2>
+      <div class="comparison-container" style="display: flex; justify-content: center; flex-wrap: wrap;">
+        <p>직관적이고 사용자 친화적인 인터페이스를 제공합니다.</p>
+    </section>
+
+    <section id="features" class="hidden">
+      <h2 style="color: #333; text-align: center;">핵심 기능</h2>
+      <div class="features-container">
+        <div class="review-box2 comparison-box">
+          <div class="image-container">
+            <img src="a.png" alt="타사 제품 이미지" style="max-width: 100%; height: auto; border-radius: 5px; margin-bottom: 10px;">
+          </div>
+          <p>• 물리 버튼으로 쉽게 걸고 끊는 영상통화 기능</p>
+        </div>
+        <div class="review-box2 comparison-box">
+          <div class="image-container">
+            <img src="b.png" alt="타사 제품 이미지" style="max-width: 100%; height: auto; border-radius: 5px; margin-bottom: 10px;">
+          </div>
+          <p>• 통화 가능 시간에 녹색 LED 점등</p>
+        </div>
+        <div class="review-box2 comparison-box">
+          <div class="image-container">
+            <img src="c.png" alt="타사 제품 이미지" style="max-width: 100%; height: auto; border-radius: 5px; margin-bottom: 10px;">
+          </div>
+          <p>• 비터치식 디스플레이 사용</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="comparison" class="hidden">
+      <h2 style="color: #333; text-align: center;">시중 제품과의 차별점</h2>
+      <div class="comparison-container" style="display: flex; justify-content: center; flex-wrap: wrap;">
+        <div class="review-box comparison-box">
+          <h3>자사 제품</h3>
+          <p>기능이 많고 가격이 높은 스마트 기기의 단점을 보완합니다.</p>
+          <div class="image-container">
+            <img src="https://wrtn-image-user-output.s3.ap-northeast-2.amazonaws.com/65f7a7cc0769d0ff90b429b4/ec0f9517-fa23-459e-92c4-a6e604f7581b.png" alt="자사 제품 이미지" style="max-width: 100%; height: auto; border-radius: 5px; margin-bottom: 10px;">
+          </div>
+          <ul>
+            <li style="list-style: none;">• 물리 버튼으로 쉽게 걸고 끊는 영상통화 기능</li>
+            <li style="list-style: none;">• 통화 가능 시간에 녹색 LED 점등</li>
+            <li style="list-style: none;">• 비터치 식 디스플레이 사용</li>
+          </ul>
+        </div>
+        <div class="review-box comparison-box">
+          <h3>타사 제품</h3>
+          <p>복잡한 기능과 비싼 가격으로 노인층 사용에 적합하지 않습니다.</p>
+          <div class="image-container">
+            <img src="https://images.samsung.com/is/image/samsung/sec_XQ700T1C-G57C_054_black_black?$450_N_PNG$" alt="타사 제품 이미지" style="max-width: 100%; height: auto; border-radius: 5px; margin-bottom: 10px;">
+          </div>
+          <ul>
+            <li style="list-style: none;">• 고급 기능이 많지만 사용법이 복잡함</li>
+            <li style="list-style: none;">• 비싼 가격으로 구매 부담이 큼</li>
+            <li style="list-style: none;">• 터치스크린이 잘못 눌리는 경우가 많아 노인들이 어려워함</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="hidden">
+      <h2 style="color: #333; text-align: center;">고객 리뷰</h2>
+      <div class="review-container" style="font-family: 'Nanum Pen Script', cursive;"> <!-- 글씨체 적용 -->
+        <div class="review-box">
+          <h3>고객 1</h3>
+          <p>이 제품은 정말 사용하기 쉽고, 부모님이 좋아하십니다!</p>
+        </div>
+        <div class="review-box">
+          <h3>고객 2</h3>
+          <p>기능이 간단해서 노인분들이 사용하기에 매우 적합합니다.</p>
+        </div>
+        <div class="review-box">
+          <h3>고객 3</h3>
+          <p>제품이 매우 직관적이라 사용하기 편리합니다.</p>
+        </div>
+        <div class="review-box">
+          <h3>고객 4</h3>
+          <p>부모님이 이 제품을 잘 사용하고 계십니다.</p>
+        </div>
+        <div class="review-box">
+          <h3>고객 5</h3>
+          <p>간단한 조작으로 통화가 가능해 좋습니다.</p>
+        </div>
+        <div class="review-box">
+          <h3>고객 6</h3>
+          <p>디자인이 깔끔하고 마음에 듭니다.</p>
+        </div>
+        <div class="review-box">
+          <h3>고객 7</h3>
+          <p>사용법이 쉬워서 추천합니다!</p>
+        </div>
+        <div class="review-box">
+          <h3>고객 8</h3>
+          <p>기능이 정말 유용합니다.</p>
+        </div>
+        <div class="review-box">
+          <h3>고객 9</h3>
+          <p>부모님이 이 제품을 아주 좋아하세요.</p>
+        </div>
+        <div class="review-box">
+          <h3>고객 10</h3>
+          <p>비교적 저렴한 가격에 좋은 제품입니다.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>문의: ageconnect@gmail.com</p>
+  </footer>
+  <script src="script.js"></script> <!-- JavaScript 파일 포함 -->
+</body>
+
+</html>
